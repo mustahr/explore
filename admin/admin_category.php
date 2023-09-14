@@ -44,8 +44,7 @@ $category = $db->query("SELECT * FROM category");
     $index = '../';
 
     require($file);
-
-    logo($logo, $index, '', '', '', '', '');
+=
     ?>
 
 
@@ -148,6 +147,8 @@ $category = $db->query("SELECT * FROM category");
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
 </body>
 
 </html>

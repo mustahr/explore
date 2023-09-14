@@ -65,8 +65,6 @@ $reservation = $db->query("SELECT * FROM client");
 
     require($file);
 
-    logo($logo, $index, '', '', '', '', '');
-
     ?>
 
     <div class="container">
@@ -97,6 +95,8 @@ $reservation = $db->query("SELECT * FROM client");
             ?>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
 </body>
 
 </html>

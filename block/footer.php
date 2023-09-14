@@ -5,11 +5,11 @@ function footer($logo, $index, $about ,$contact, $faq)
 {
     echo '
     <footer>
-    <div class="logo" data-aos="fade-up" data-aos-delay="500">
+    <div class="logo reveal">
         <a href="' . $index . '"><img src="' . $logo . '" alt="Logo"></a>
     </div>
     <div class="footer">
-        <div class="follow" data-aos="fade-up">
+        <div class="follow reveal">
             <p>Follow us on :</p>
             <span>
                 <a href="http://" title="@moroccan_explorers">
@@ -20,12 +20,12 @@ function footer($logo, $index, $about ,$contact, $faq)
                 </a>
             </span>
         </div>
-        <div class="link" data-aos="fade-up">
+        <div class="link reveal">
             <a href="' . $about . '">ABOUT</a>
             <a href="' . $contact . '">CONTACT</a>
             <a href="' . $faq . '">FAQ</a>
         </div>
-        <div class="sign" data-aos="fade-up">
+        <div class="sign reveal">
             <div class="login-box">
                 <h3>Sign up for updates : </h3>
                 <form action="block/form.php" method="post">

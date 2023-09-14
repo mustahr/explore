@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-        <meta
-    name="description"
-    content="traveling
+    <meta name="description" content="traveling
             ,travelers
             ,travelbug
             ,travelholic
@@ -106,65 +104,64 @@
 
     require($file);
 
-    logo($logo, $index, $trips, $categories, $contact, $about, $faq);
+    // logo($logo, $index, $trips, $categories, $contact, $about, $faq);
     ?>
 
     <section class="f_section">
         <div class="big_cap">
-            <h1 data-aos="fade-up"> THERE IS A HUGE WORLD.</h1>
-            <span data-aos="fade-up"> COME DISCOVER IT WITH US</span>
-            <p data-aos="fade-up">
-                " Experiencing new cultures and meeting new people can be truly enriching and rewarding. "
+            <h1> THERE IS A HUGE WORLD.</h1>
+            <span> COME DISCOVER IT WITH US</span>
+            <p>
+                Experiencing new cultures and meeting new people can be truly enriching and rewarding.
             </p>
         </div>
-        <div class="img" data-aos="fade-up">
+        <div class="img">
             <img src="./images/about_1.jpg" alt="desert">
         </div>
     </section>
 
     <section class="s_section">
-        <div class="big_cap">
-            <h1 data-aos="fade-up"> SHORT STORY</h1>
-            <span data-aos="fade-up">Our story begins with a passionate Moroccan explorer </span>
-            <p data-aos="fade-up">
+        <div class="big_cap reveal">
+            <h1> SHORT STORY</h1>
+            <span>Our story begins with a passionate Moroccan explorer </span>
+            <p>
                 challenging himself to do what has not been done before. Taking departure to unknown places and exploring the scenic routes of his country, the <span>love</span> has quickly risen from necessity - He had to show the world! Such beauty cannot remain unseen.
                 <br> Today, we are very grateful to share a piece of our hearts with you. For us, part of what makes this experience magical is showing you <span>Morocco</span> in a new light - If you are one to reach out eagerly and without fear for a newer and richer experience, this is the place for <span>you</span> .
             </p>
         </div>
-        <div class="img" data-aos="fade-right" data-aos="fade-up">
-            <img  src="./images/team.jpg" alt="jumping boy">
-            <img  src="./images/team_2.jpg" id="team_2" alt="jumping boy">
+        <div class="img reveal">
+            <img src="./images/team.jpg" alt="jumping boy">
+            <img src="./images/team_2.jpg" id="team_2" alt="jumping boy">
         </div>
     </section>
 
     <section class="t_section">
-        <div class="big_cap" data-aos="fade-up">
+        <div class="big_cap reveal">
             <h1> Exclusive Tours By Local experts </h1>
             <p>
                 We spend a great deal of time looking for the perfect landscapes that will mesmerize your soul and make your heart sing.
             </p>
         </div>
-        <div class="img" data-aos="fade-up">
+        <div class="img reveal">
             <img src="./images/tea.jpg" alt="traveling">
         </div>
     </section>
 
     <section class="fo_section">
-        <div class="big_cap" data-aos="fade-up">
+        <div class="big_cap reveal">
             <h1> A Small Team Who Cares </h1>
             <span>A Moroccan two brothers , </span>
-
             <p>
-                We’re a small business that loves travelling and cares about making every single experience special. Everytime one of you joins our exclusive community, it only fills us up with love!
+ 20               We’re a small business that loves travelling and cares about making every single experience special. Everytime one of you joins our exclusive community, it only fills us up with love!
             </p>
         </div>
-        <div class="img" data-aos="fade-right">
-            <img  src="./images/brothers.jpg" alt="traveling">
+        <div class="img reveal">
+            <img src="./images/brothers.jpg" alt="traveling">
         </div>
     </section>
 
     <section class="fi_section">
-        <div class="big_cap" data-aos="fade-up">
+        <div class="big_cap reveal">
             <h1> For the travelers who need a resilient </h1>
             <span>Comfortable and luxury 4WD vehicle on their expeditions, </span>
 
@@ -173,8 +170,8 @@
                 The land cruiser Prado is the longest running manufactured series of 4WD vehicles of Toyota and a really great deal for adventurous travelers.
             </p>
         </div>
-        <div class="img" data-aos="fade-up">
-            <img  src="./images/4x4.jpg" alt="traveling">
+        <div class="img reveal">
+            <img src="./images/4x4.jpg" alt="traveling">
         </div>
     </section>
 
@@ -190,51 +187,7 @@
 
 
 
-    <script src="./files/js/main.js"></script>
-
-    <!-- https://michalsnik.github.io/aos/ -->
-    <script>
-        AOS.init({
-            duration: 1100,
-        });
-    </script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Default parameters
-            slidesPerView: 4,
-            spaceBetween: 10,
-            freeMode: {
-                enabled: true,
-                sticky: true,
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-
-        });
-
-    </script>
+    <script src="./js/main.js"></script>
 
 </body>
 

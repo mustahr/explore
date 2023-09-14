@@ -1,0 +1,492 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<urlset-->
+<!--      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"-->
+<!--      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9-->
+<!--            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">-->
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>1.00</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trips.php</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/category/categories.php</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/contact.php</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/about.php</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/faq.php</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=28</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=29</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=30</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=31</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=34</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=35</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=36</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=39</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=34&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=46&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=35&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=36&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=49&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=40&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=43&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=37&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=38&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=44&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=45&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=47&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=48&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=42&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=39&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=50&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=41&amp;back='back'</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=37</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=38</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=40</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=41</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=42</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=43</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=44</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=45</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=46</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=47</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=48</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=49</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=50</loc>-->
+<!--  <lastmod>2023-03-23T03:05:25+00:00</lastmod>-->
+<!--  <priority>0.64</priority>-->
+<!--</url>-->
+
+
+<!--</urlset>-->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--	created with www.mysitemapgenerator.com -->
+
+-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>1.0</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/category/categories.php</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/contact.php</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.8</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/about.php</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.8</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/faq.php</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.8</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=28</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=29</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=30</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/category/category.php?id_cat=31</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=34</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=36</loc>
+
+<lastmod>2023-03-26T05:05:53+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=45</loc>
+
+<lastmod>2023-03-26T05:06:28+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=46</loc>
+
+<lastmod>2023-03-26T05:06:28+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=37</loc>
+
+<lastmod>2023-03-26T05:06:36+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=38</loc>
+
+<lastmod>2023-03-26T05:06:36+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=40</loc>
+
+<lastmod>2023-03-26T05:06:36+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=41</loc>
+
+<lastmod>2023-03-26T05:06:36+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=49</loc>
+
+<lastmod>2023-03-26T05:06:39+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=50</loc>
+
+<lastmod>2023-03-26T05:06:39+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=43</loc>
+
+<lastmod>2023-03-26T05:06:44+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=44</loc>
+
+<lastmod>2023-03-26T05:06:44+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=47</loc>
+
+<lastmod>2023-03-26T05:06:44+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+
+-<url>
+
+<loc>https://exploremorocco4x4.com/files/trips/trip.php?trip_id=48</loc>
+
+<lastmod>2023-03-26T05:06:44+01:00</lastmod>
+
+<priority>0.6</priority>
+
+</url>
+
+</urlset>

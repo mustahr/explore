@@ -41,7 +41,6 @@ $trip = $db->query("SELECT * FROM trip");
 
     require($file);
 
-    logo($logo, $index, '', '', '', '', '');
     ?>
 
 
@@ -261,6 +260,8 @@ $trip = $db->query("SELECT * FROM trip");
             </div>
         </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
 </body>
 
 </html>

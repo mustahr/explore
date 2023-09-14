@@ -102,10 +102,14 @@ $diffSecond = $currentSecond - $addSecond;
     $logo = '../block/logo.png';
     $file = '../block/header.php';
     $index = '../';
+    $trips = '';
+    $search_url = '';
+    $categories =  '';
+    $contact =  '';
+    $about = '';
+    $faq = '';
 
     require($file);
-
-    logo($logo, $index, '', '', '', '', '');
 
     ?>
     <div class="container">
@@ -123,6 +127,9 @@ $diffSecond = $currentSecond - $addSecond;
             </fieldset>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
+
 
 </body>
 

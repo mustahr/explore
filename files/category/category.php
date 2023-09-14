@@ -25,7 +25,7 @@ $cat = $db->query("SELECT * FROM category");
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../block/header_style.css">
     <link rel="stylesheet" href="../../block/footer.css">
-    <title>category</title>
+    <title>Category - Chose the best trips for you</title>
     <link rel="icon" href="../../block/logo.png">
 
     <!-- bootstrash -->
@@ -33,12 +33,6 @@ $cat = $db->query("SELECT * FROM category");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- icons.com -->
-    <a target="_blank" href="https://icons8.com/icon/ZMS7XMuKStHF/loading-heart"></a>
 </head>
 
 <body>
@@ -49,6 +43,7 @@ $cat = $db->query("SELECT * FROM category");
     $file = '../../block/header.php';
     $index = '../../';
     $trips = '../trips/trips.php';
+    $search_url = '..trips-search/search';
     $categories =  'categories.php';
     $contact =  '../contact.php';
     $about = '../about.php';
@@ -56,7 +51,7 @@ $cat = $db->query("SELECT * FROM category");
 
     require($file);
 
-    logo($logo, $index, $trips, $categories, $contact, $about, $faq);
+    // logo($logo, $index, $trips, $categories, $contact, $about, $faq);
 
     ?>
 
@@ -64,19 +59,19 @@ $cat = $db->query("SELECT * FROM category");
 
 
         <section class="sec1">
-            <img class="lazy" src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['category_image']); ?>" alt="category_image">
+            <img  src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['category_image']); ?>" alt="category_image">
             <div class="title">
-                <h1 data-aos="fade-up">
+                <h1>
                     <?php echo $row['category']; ?>
                 </h1>
             </div>
         </section>
         
         <section class="sec2">
-            <div class="title" data-aos="fade-up">
+            <div class="title">
                 <?php echo $row['big_title']; ?>
             </div>
-            <div class="description" data-aos="fade-up">
+            <div class="description">
                 <span>Here's how it works :<br></span>
                 <p>
                     <?php echo $row['descriptionn']; ?>
@@ -85,7 +80,7 @@ $cat = $db->query("SELECT * FROM category");
         </section>
 
         <section class="sec3">
-            <div class="video" data-aos="fade-up">
+            <div class="video reveal">
                 <div class="photo" id="photo"></div>
                 <iframe src="<?php echo $row['video_link']; ?>"></iframe>
                 <button id="play_viedo" class="myButton">PLAY VIDEO</button>
@@ -93,8 +88,7 @@ $cat = $db->query("SELECT * FROM category");
         </section>
 
         <div class="sec5">
-            <div class="title" data-aos="fade-up">
-
+            <div class="title reveal">
                 <h1>
                     If you enjoy trying new foods, exploring historical sites,
                     or immersing yourself in different cultures, then a private
@@ -106,8 +100,8 @@ $cat = $db->query("SELECT * FROM category");
 
 
         <section class="sec4">
-            <div class="title">
-                <h1 data-aos="fade-up">Our
+            <div class="title reveal">
+                <h1>Our
                     <?php echo $row['category']; ?>
                 </h1>
             </div>
@@ -130,12 +124,12 @@ $cat = $db->query("SELECT * FROM category");
 
             <section class="sec_1" id='scroll_<?php echo $i; ?>' style=" background-image: url('data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['trip_front_image']); ?>');
 ">
-                <div class="scroll">
+                <div class="scroll reveal">
                     <a href="#scroll_<?php $i++ ;echo $i; ?>">
-                        <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2TPQ6DMAxGuUQR3P8mdCrQhQw9zutABhRSaseJBCiflMk/L47zNU1V1e0FDMAMtBl6tcAbeEqSR1Y5C9xDne/1khQ8gMUXfIA+ARr26FILxfBkqAVuhqbAs0E18CzQmJ2CH+qUMZudYgDFhUR20kynfoV/8J97DWK7nZr3LZh88sc+qWZyQe5F7KSFF4MewYtDN3CRnUrBD+1UGh61U1XVKfQFaTnYYz43COgAAAAASUVORK5CYII=">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2TPQ6DMAxGuUQR3P8mdCrQhQw9zutABhRSaseJBCiflMk/L47zNU1V1e0FDMAMtBl6tcAbeEqSR1Y5C9xDne/1khQ8gMUXfIA+ARr26FILxfBkqAVuhqbAs0E18CzQmJ2CH+qUMZudYgDFhUR20kynfoV/8J97DWK7nZr3LZh88sc+qWZyQe5F7KSFF4MewYtDN3CRnUrBD+1UGh61U1XVKfQFaTnYYz43COgAAAAASUVORK5CYII=">
                     </a>
                 </div>
-                <div class="container reserv_info" data-aos="fade-up" data-aos-delay="500">
+                <div class="container reserv_info reveal">
                     <div class="form">
                         <div class="title">
                             <?php echo $row['trip_title']; ?>
@@ -145,14 +139,20 @@ $cat = $db->query("SELECT * FROM category");
                             <span class="first_week">
                                 <span id="first_week"><?php echo $row['time_start']; ?></span> <i class="status"></i>
                             </span>
+                        <?php
+                        if (trim($row['time_open']) == 'o') {
+                        ?>
                             <span class="second_week">
-                                <span id="second_week"><?php echo $row['time_end']; ?> </span><i class="status"></i>
+                                <span id="second_week">to <?php echo $row['time_end']; ?> </span><i class="status"></i>
                             </span>
+                        <?php
+                        }
+                        ?>
                         </div>
                         <div class="activity">
                             <p>Activity</p>
                             <h4><?php echo $row['activity']; ?> </h4>
-                            <p>From <?php echo $row['price_origine']; ?> pp dbl. occ.</p>
+                            <!-- <p>From <?php // echo $row['price_origine']; ?> pp dbl. occ.</p> -->
                         </div>
                     </div>
                     <a href="../trips/trip.php?trip_id=<?php echo $row['trip_id']; ?>">
@@ -189,23 +189,12 @@ $cat = $db->query("SELECT * FROM category");
 
 
     <script src="../js/main.js"></script>
-
-
-    <!-- lazy loading -->
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
-    <script>
-        new LazyLoad();
-    </script>
+    
 
     <script>
         $("#play_viedo").click(function() {
             $(".photo").css("display", "none");
             $(this).css("display", "none");
-        });
-
-
-        AOS.init({
-            duration: 1100,
         });
     </script>
 </body>

@@ -3,6 +3,7 @@
 require_once '../conf/connect.php';
 $trip_id = $_GET['trip_id'];
 $back = $_GET['back'];
+$search = $_GET['search'];
 if (isset($_GET['succes'])) {
     $succes = $_GET['succes'];
 }
@@ -31,13 +32,11 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <!-- Font awsome -->
+    <script src="https://kit.fontawesome.com/8ec1398eb3.js" crossorigin="anonymous"></script>
     <!-- icons.com -->
     <a target="_blank" href="https://icons8.com/icon/ZMS7XMuKStHF/loading-heart"></a>
-    
+
 </head>
 
 <body>
@@ -51,6 +50,7 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
     $file = '../../block/header.php';
     $index = '../../';
     $trips = 'trips.php';
+    $search_url = '../trips-search/search';
     $categories =  '../category/categories.php';
     $contact =  '../contact.php';
     $about = '../about.php';
@@ -58,7 +58,7 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
 
     require($file);
 
-    logo($logo, $index, $trips, $categories, $contact, $about, $faq);
+    // logo($logo, $index, $trips, $categories, $contact, $about, $faq);
     ?>
 
 
@@ -73,13 +73,13 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
 
         <!-- start of section 1 -->
 
-        <section class="sec_1" style=" background-image: url('data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['trip_front_image']); ?>');">
+        <section class="sec_1" id="top" style=" background-image: url('data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['trip_front_image']); ?>');">
             <div class="scroll">
                 <a href="#scroll">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2TPQ6DMAxGuUQR3P8mdCrQhQw9zutABhRSaseJBCiflMk/L47zNU1V1e0FDMAMtBl6tcAbeEqSR1Y5C9xDne/1khQ8gMUXfIA+ARr26FILxfBkqAVuhqbAs0E18CzQmJ2CH+qUMZudYgDFhUR20kynfoV/8J97DWK7nZr3LZh88sc+qWZyQe5F7KSFF4MewYtDN3CRnUrBD+1UGh61U1XVKfQFaTnYYz43COgAAAAASUVORK5CYII=" alt="traveling">
                 </a>
             </div>
-            <div class="container reserv_info" data-aos="fade-up" data-aos-delay="500">
+            <div class="container reserv_info active">
                 <div class="form">
                     <div class="title">
                         <?php echo $row['trip_title']; ?>
@@ -104,25 +104,33 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
                     <div class="activity">
                         <p>Activity</p>
                         <h4><?php echo $row['activity']; ?> </h4>
-                       <!-- <p>From <span><?php // echo $row['price_origine']; ?>$ </span>pp dbl. occ.</p> -->
+                        <!-- <p>From <span><?php // echo $row['price_origine']; 
+                                            ?>$ </span>pp dbl. occ.</p> -->
                     </div>
                 </div>
                 <div class="button">
                     RESERVE
                 </div>
-                <?php if(!isset($back)){ ?>
-                <div class="back">
-                    <a href="../category/category.php?id_cat=<?php echo trim($row['category']) ?>">
-                        BACK TO CATEGORY
-                    </a>
-                </div>
+                <?php
+                if (isset($search)) { ?>
+                    <div class="back">
+                        <a href="../trips-search/search.php?searchTerm=<?php echo $search ?>">
+                            BACK TO SEARCH
+                        </a>
+                    </div>
+                <?php } elseif (!isset($back)) { ?>
+                    <div class="back">
+                        <a href="../category/category.php?id_cat=<?php echo trim($row['category']) ?>">
+                            BACK TO CATEGORY
+                        </a>
+                    </div>
                 <?php } else { ?>
-                <div class="back">
-                    <a href="../trips/trips.php">
-                        BACK TO TRIPS
-                    </a>
-                </div>    
-                <?php }?>
+                    <div class="back">
+                        <a href="../trips/trips.php">
+                            BACK TO TRIPS
+                        </a>
+                    </div>
+                <?php } ?>
             </div>
 
             <form action="mail.php?trip_id=<?php echo $trip_id ?>&trip=<?php echo $row['trip_title'] ?>" id="form" method="post">
@@ -140,7 +148,7 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
 
 
         <section class="sec_2" id="scroll">
-            <div class="first" data-aos="fade-up" data-aos-duration="2000">
+            <div class="image first ">
                 <div class="title">
                     <h1>
                         <?php
@@ -151,11 +159,11 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
                     </p>
                 </div>
                 <div class="img">
-                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_1']); ?>" alt="image_travel">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_1']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_1']); ?>" data-image-caption="<?php echo $row['img_1_caption']; ?>" alt="image_travel">
                     <p><?php echo $row['img_1_caption']; ?></p>
                 </div>
             </div>
-            <div class="second" data-aos="fade-up">
+            <div class="second ">
                 <div class="title">
                     <h1>
                         <?php echo $row['big_title_2']; ?>
@@ -167,7 +175,7 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
                 <?php
                 while ($indluce = $includes->fetch_assoc()) {
                 ?>
-                    <div class="include" data-aos="fade-up">
+                    <div class="include ">
                         <div class="tag">
                             <h3><?php echo $indluce['title_include']; ?></h3>
                         </div>
@@ -227,38 +235,38 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
 
         <section class="sec_3">
 
-            <div class="third" data-aos="fade-up">
+            <div class="third image ">
                 <div class="title">
                     <h1>
                         <?php echo $row['big_title_3']; ?>
                     </h1>
                 </div>
                 <div class="img">
-                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_2']); ?>" alt="image_travel" >
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_2']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_2']); ?>" data-image-caption="<?php echo $row['img_2_caption']; ?>" alt="image_travel">
                     <p><?php echo $row['img_2_caption']; ?></p>
                 </div>
-                <div class="description" data-aos="fade-up">
+                <div class="description ">
                     <p>
                         <?php echo $row['description_3']; ?>
                     </p>
                 </div>
             </div>
 
-            <div class="gallery">
-                <div class="img" data-aos="fade-up">
-                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_3']); ?>" alt="traveling">
+            <div class="image gallery ">
+                <div class="img">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_3']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_3']); ?>" data-image-caption="<?php echo $row['img_3_caption']; ?>" alt="traveling">
                     <p><?php echo $row['img_3_caption']; ?></p>
                 </div>
-                <div class="img" data-aos="fade-up">
-                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_4']); ?>"alt="traveling">
+                <div class="img">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_4']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_4']); ?>" data-image-caption="<?php echo $row['img_4_caption']; ?>" alt="traveling">
                     <p><?php echo $row['img_4_caption']; ?></p>
                 </div>
-                <div class="img" data-aos="fade-up">
-                    <img  src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_5']); ?>" alt="traveling">
+                <div class="img">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_5']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_5']); ?>" data-image-caption="<?php echo $row['img_5_caption']; ?>" alt="traveling">
                     <p><?php echo $row['img_5_caption']; ?></p>
                 </div>
-                <div class="img" data-aos="fade-up">
-                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_6']); ?>" alt="traveling">
+                <div class="img">
+                    <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_6']); ?>" data-image-src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['img_6']); ?>" data-image-caption="<?php echo $row['img_6_caption']; ?>" alt="traveling">
                     <p><?php echo $row['img_6_caption']; ?></p>
                 </div>
             </div>
@@ -273,11 +281,11 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
                 ?>
                     <div class="client_review">
 
-                        <div class="img" data-aos="fade-up">
-                            <img src="https://img.freepik.com/free-photo/islamic-woman-portrait-looking-camera_53876-20792.jpg?w=740&t=st=1670531986~exp=1670532586~hmac=e91d2fd8f7c8c42327f1b08d0ac9e7798ca303c6e2163f0066d183f9b317dae8"alt="traveling">
+                        <div class="img">
+                            <img src="https://img.freepik.com/free-photo/islamic-woman-portrait-looking-camera_53876-20792.jpg?w=740&t=st=1670531986~exp=1670532586~hmac=e91d2fd8f7c8c42327f1b08d0ac9e7798ca303c6e2163f0066d183f9b317dae8" alt="traveling">
                         </div>
 
-                        <div class="review" data-aos="fade-up">
+                        <div class="review">
                             <h3>Client review</h3>
                             <p>
                                 <?php echo $rev['review']; ?>
@@ -296,35 +304,61 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
         }
         ?>
         <section class="sec_5">
-            <div class="title" data-aos="fade-up">
+            <div class="title">
                 <h1><?php echo $row['trip_title']; ?></h1>
             </div>
-            
-            <div class="map" data-aos="flip-up">
+
+            <div class="map">
                 <?php echo $row['trip_location']; ?>
             </div>
         </section>
-        
+
+        <div class="reserve_botton">
+            <center><a href="#top">RESERVE TRIP</a> </center>
+        </div>
+
         <div class="sec_6">
-            <h1 data-aos="fade-up">⚠ Bear in mind that</h1>
-            <h4 data-aos="fade-up">
+            <h1 class="">⚠ Bear in mind that</h1>
+            <h4 class="">
                 This trip is only a proposal for an itinerary, if it does not fit your needs, do not hesitate to
                 <a href="../contact.php">contact us</a> .
             </h4>
-            <h4 data-aos="fade-up">
+            <h4 class="">
                 We offer customized and tailor-made tours and trips throughout Morocco that are based on your preferences and length of stay. The price of the tour will vary based on the number of people joining,
                 with the more people joining resulting in a lower price.
             </h4>
-            <h4 data-aos="fade-up">
+            <h4 class="">
                 Since the transportation payment is fixed, the price will be divided according to the number of people.
             </h4>
-            <h4 data-aos="fade-up">
+            <h4 class="">
                 The price also depends on the quality of the accommodation. Contact us for an exact price.
             </h4>
         </div>
 
     <?php } ?>
-
+    <!-- Photos sectin -->
+    <div class="slide">
+        <div id="zoomed-in-modal">
+            <img id="zoomed-in-image" src="" alt="">
+            <p id="zoomed-in-caption"></p>
+            <p id="zoomed-in-order"></p>
+            <div class="btn-1">
+                <button id="btn-prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="btn-2">
+                <button id="btn-next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="btn-3">
+                <button id="btn-close">
+                    <i class="fa-solid fa-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <?php
     // include see more trips
@@ -348,7 +382,7 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
     ?>
 
 
-    <!-- https://michalsnik.github.io/aos/ -->
+    <script src="./../js/main.js"></script>
     <script>
         // for the reserve 
         $(".button").click(function() {
@@ -361,8 +395,57 @@ $includes = $db->query("SELECT * FROM trip_includes WHERE trip_id = $trip_id");
             $(".reserv_info").css("display", "flex");
         });
 
-        AOS.init({
-            duration: 1100,
+
+        //// Zooming photos
+        $(document).ready(function() {
+            var currentImageIndex = 0; // keep track of current image index
+            let imageOrder = 1;
+            $('.image .img img').on('click', function() {
+                currentImageIndex = $(this).index(); // update current image index
+                showZoomedInModal(currentImageIndex);
+            });
+
+            $('#btn-close').on('click', function() {
+                hideZoomedInModal();
+            });
+
+            $('#btn-next').on('click', function() {
+                currentImageIndex++;
+                if (currentImageIndex >= $('.image img').length) {
+                    currentImageIndex = 0; // wrap around to first image
+                }
+                showZoomedInModal(currentImageIndex);
+            });
+
+            $('#btn-prev').on('click', function() {
+                currentImageIndex--;
+                if (currentImageIndex < 0) {
+                    currentImageIndex = $('.image img').length - 1; // wrap around to last image
+                }
+                showZoomedInModal(currentImageIndex);
+            });
+
+            function showZoomedInModal(index) {
+                var imageSrc = $('.image .img img').eq(index).data('image-src');
+                var imageCaption = $('.image .img img').eq(index).data('image-caption');
+                $('#zoomed-in-image').attr('src', imageSrc);
+                $('#zoomed-in-caption').text(imageCaption);
+                $('#zoomed-in-order').text((index + 1) + ' / ' + $('.image .img img').length); // update image order
+                $('.slide').show();
+                $('.slide').addClass('active-modal');
+                $('#btn-close').addClass('button-active');
+                $('#btn-next').addClass('button-active');
+                $('#btn-prev').addClass('button-active');
+                $('#zoomed-in-caption').addClass('button-active');
+                $('#zoomed-in-order').addClass('button-active');
+                // imageOrder.eq(index);
+            }
+
+            function hideZoomedInModal() {
+                $('.slide').hide();
+                $('.slide').removeClass('active-modal');
+
+            }
         });
     </script>
 </body>

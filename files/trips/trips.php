@@ -28,12 +28,11 @@ $trip = $db->query("SELECT * FROM trip WHERE show_trip = 'y' ORDER BY trip_title
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- icons.com -->
     <a target="_blank" href="https://icons8.com/icon/ZMS7XMuKStHF/loading-heart"></a>
+    
+    <style>.active {animation: scroll 2s;}@keyframes scroll {from {transform: translateY(200px);opacity: 0;}}</style>
 </head>
 
 <body>
@@ -46,6 +45,7 @@ $trip = $db->query("SELECT * FROM trip WHERE show_trip = 'y' ORDER BY trip_title
     $file = '../../block/header.php';
     $index = '../../';
     $trips = 'trips.php' ;
+    $search_url = '../trips-search/search';
     $categories =  '../category/categories.php' ;
     $contact =  '../contact.php' ;
     $about = '../about.php' ;
@@ -53,7 +53,7 @@ $trip = $db->query("SELECT * FROM trip WHERE show_trip = 'y' ORDER BY trip_title
 
     require($file);
 
-    logo($logo,$index,$trips,$categories,$contact,$about,$faq);
+    // logo($logo,$index,$trips,$categories,$contact,$about,$faq);
     ?>
 
     <!-- ----------------- trips -------------------- -->
@@ -72,7 +72,7 @@ $trip = $db->query("SELECT * FROM trip WHERE show_trip = 'y' ORDER BY trip_title
                     <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAAqklEQVRIie2TPQ6DMAxGuUQR3P8mdCrQhQw9zutABhRSaseJBCiflMk/L47zNU1V1e0FDMAMtBl6tcAbeEqSR1Y5C9xDne/1khQ8gMUXfIA+ARr26FILxfBkqAVuhqbAs0E18CzQmJ2CH+qUMZudYgDFhUR20kynfoV/8J97DWK7nZr3LZh88sc+qWZyQe5F7KSFF4MewYtDN3CRnUrBD+1UGh61U1XVKfQFaTnYYz43COgAAAAASUVORK5CYII=" alt="traveling">
                 </a>
             </div>
-            <div class="container reserv_info" data-aos="fade-up" data-aos-delay="500">
+            <div class="container reserv_info <?php if( $i == 1 ) echo 'active'; ?> " >
                 <div class="form">
                     <div class="title">
                         <?php echo $row['trip_title']; ?>
@@ -123,12 +123,6 @@ $trip = $db->query("SELECT * FROM trip WHERE show_trip = 'y' ORDER BY trip_title
 
     <script src="../js/main.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <script>
-        AOS.init({
-            duration: 1100,
-        });
-    </script>
 </body>
 
 </html>

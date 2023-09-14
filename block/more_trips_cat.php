@@ -18,7 +18,7 @@ if ($table == 'trip') {
             <link rel="stylesheet" href="../../block/more_trips_cat.css">
         </head>
         <div class="navigate">
-            <h4 data-aos="fade-right">More trips</h4> 
+            <h4 class="scroll-target">More trips</h4> 
         ';
         for ($i = 0; $i < count($array_id); $i++) {
             $html .=  '
@@ -46,7 +46,7 @@ if ($table == 'trip') {
             <link rel="stylesheet" href="../../block/more_trips_cat.css">
         </head>
         <div class="navigate">
-            <h4 data-aos="fade-right">More categories </h4> 
+            <h4 class="scroll-target">More categories </h4> 
         ';
         for ($i = 0; $i < count($array_id); $i++) {
             $html .=  '

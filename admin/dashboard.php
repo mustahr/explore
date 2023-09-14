@@ -49,7 +49,6 @@ if (!isset($_SESSION['login'])) {
 
     require($file);
 
-    logo($logo, $index, '', '', '', '', '');
 
     ?>
     <div class="container">
@@ -71,7 +70,8 @@ if (!isset($_SESSION['login'])) {
             </div>
         </div>
     </div>
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
 </body>
 
 </html>

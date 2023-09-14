@@ -66,17 +66,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <!-- icons.com -->
     <a target="_blank" href="https://icons8.com/icon/ZMS7XMuKStHF/loading-heart"></a>
-
-    <!-- lazy loading -->
-    <link href="style.css" rel="stylesheet" media="all" />
-    <link href="portrait.css" rel="stylesheet" media="(orientation:portrait)" />
-    <link href="print.css" rel="stylesheet" media="print" />
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -84,9 +75,6 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-
-    <!-- Normalize CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -110,13 +98,14 @@
 
     require($file);
 
-    logo($logo, $index, $trips, $categories, $contact, $about, $faq);
+    // logo($logo, $index, $trips, $categories, $contact, $about, $faq);
     ?>
+
 
 
     <section class="sec_1">
         <div class="first">
-            <div class="div_1" data-aos="fade-up">
+            <div class="div_1" >
                 <h1>
                     GET IN TOUCH
                 </h1>
@@ -129,13 +118,13 @@
                     <br>
                     <a href="mailto:contact@exploremorocco4x4.com">contact@exploremorocco4x4.com</a>
                     <br>
-                    +212 608-731353
+                    <a href="tel:+212 608-731353">+212 608-731353</a>
                     <br>
-                    +212 674-686567
+                    <a href="tel:+212 674-686567">+212 674-686567</a>
                 </p>
             </div>
 
-            <div class="div_2"data-aos="fade-up">
+            <div class="div_2">
                 <p class="p">
                     Frequently asked questions
                 </p>
@@ -143,12 +132,12 @@
                     <a href="faq.php">FAQ</a>  about EXPLORE MORROCCO 4X4.
                 </p>
             </div>
-            <div class="div_2"data-aos="fade-up">
+            <div class="div_2">
                 <p class="p">
                     Mailing address
                 </p>
                 <p>
-                    Explore Morocco 4x4.
+                    Explore Morocco 4x4
                 </p>
                 <p>
                     Morocco
@@ -160,7 +149,7 @@
         </div>
 
         <div class="second">
-            <div class="sign" data-aos="fade-up">
+            <div class="sign" >
                 <div class="login-box">
                     <h3>Send us a message : </h3>
                     <form action="conf/message.php" method="post">
@@ -198,58 +187,8 @@
 
 
 
-    <script src="./files/js/main.js"></script>
+    <script src="./js/main.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <script>
-        AOS.init({
-            duration: 1100,
-        });
-    </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Default parameters
-            slidesPerView: 4,
-            spaceBetween: 10,
-            freeMode: {
-                enabled: true,
-                sticky: true,
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-
-        });
-
-        $('ul.qa li a.question').click(function() {
-            $(this).toggleClass('active').siblings('.answer').stop().slideToggle(function() {
-                $(this).toggleClass('active');
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -60,7 +60,6 @@ $reservation = $db->query("SELECT * FROM messages");
 
     require($file);
 
-    logo($logo, $index, '', '', '', '', '');
 
     ?>
 
@@ -84,6 +83,8 @@ $reservation = $db->query("SELECT * FROM messages");
             ?>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../files/js/main.js"></script>
 </body>
 
 </html>

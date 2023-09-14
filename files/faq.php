@@ -2,9 +2,7 @@
 <html lang="en">
 
 <head>
-        <meta
-    name="description"
-    content="traveling
+    <meta name="description" content="traveling
             ,travelers
             ,travelbug
             ,travelholic
@@ -66,10 +64,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <!-- https://michalsnik.github.io/aos/ -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <!-- icons.com -->
     <a target="_blank" href="https://icons8.com/icon/ZMS7XMuKStHF/loading-heart"></a>
 
@@ -78,15 +72,9 @@
     <link href="portrait.css" rel="stylesheet" media="(orientation:portrait)" />
     <link href="print.css" rel="stylesheet" media="print" />
 
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
-
-    <!-- Normalize CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
@@ -110,19 +98,19 @@
 
     require($file);
 
-    logo($logo, $index, $trips, $categories, $contact, $about, $faq);
+    // logo($logo, $index, $trips, $categories, $contact, $about, $faq);
     ?>
 
 
     <div class="faq">
-        <h1 data-aos="fade-up">FREQUENTLY ASKED QUESTIONS</h1>
-        <h2 data-aos="fade-up">
+        <h1>FREQUENTLY ASKED QUESTIONS</h1>
+        <h2>
             Please check out our FAQs here or <a href="contact.php">get in touch</a> if you can't find what you're
             looking for.
         </h2>
-        <ul class="qa">
+        <ul class="qa reveal">
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Who travels on Morocco Explorers trips?
                 </a>
@@ -132,11 +120,11 @@
                     </p>
                 </div>
             </li>
-            
+
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
-                    Pickup details 
+                    Pickup details
                 </a>
                 <div class="answer">
                     <p>
@@ -146,7 +134,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Can you help with my travel arrangements?
                 </a>
@@ -159,7 +147,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Can you accommodate dietary restrictions?
                 </a>
@@ -175,7 +163,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     What is the range of walking & trekking holidays available?
                 </a>
@@ -190,7 +178,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Trip style
                 </a>
@@ -203,7 +191,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Travelling with children
                 </a>
@@ -219,7 +207,7 @@
             </li>
 
             <!-- q -->
-            <li data-aos="fade-right">
+            <li class="">
                 <a href="javascript:;" class="question">
                     Food, drink and dietary requirements
                 </a>
@@ -242,57 +230,13 @@
 
     require($file);
 
-    footer($logo, $index ,$about ,$contact ,$faq);
+    footer($logo, $index, $about, $contact, $faq);
     ?>
 
 
 
-    <script src="./files/js/main.js"></script>
-
-    <!-- https://michalsnik.github.io/aos/ -->
+    <script src="./js/main.js"></script>
     <script>
-        AOS.init({
-            duration: 1100,
-        });
-    </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        const swiper = new Swiper('.swiper', {
-            // Default parameters
-            slidesPerView: 4,
-            spaceBetween: 10,
-            freeMode: {
-                enabled: true,
-                sticky: true,
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-            // Responsive breakpoints
-            breakpoints: {
-                // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-
-        });
-
         $('ul.qa li a.question').click(function() {
             $(this).toggleClass('active').siblings('.answer').stop().slideToggle(function() {
                 $(this).toggleClass('active');
