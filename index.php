@@ -324,7 +324,6 @@ $special = $db->query("SELECT id_s_trip,thumb_img,title,trip_days FROM special_t
     $file = 'block/footer.php';
 
     require($file);
-    footer($logo, $index, $about, $contact, $faq);
     ?>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./files/js/main.js"></script>
