@@ -145,7 +145,7 @@ $special = $db->query("SELECT id_s_trip,thumb_img,title,trip_days FROM special_t
     <div class="trending ">
         <div class="title  ">
             <h5>
-                TOP DESTINATIONS
+                TOP DESTINATIONS WITH ME
             </h5>
             <!-- <hr> -->
         </div>
